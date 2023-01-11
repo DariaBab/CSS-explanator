@@ -1,0 +1,234 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;700&display=swap'); 
+body{
+    background: #D8BFD8;
+    padding: 0;
+    margin: 0;
+    font-family:  'Roboto', sans-serif;
+    color: #1b1835;
+    
+}
+
+button{
+    background:#9370DB;
+    color: white;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 16px;
+    height: 30px;
+    border-radius:10px ;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+  
+.main-container{
+    padding: 30px;
+    background: #E6E6FA;
+    width: 65vw;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+
+}
+ h2{
+    font-size: 2.5rem;
+}
+
+.show-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.paragraphF{
+    background: #663399;
+    color: white;
+    width: 55%;
+    padding: 10px;
+    text-align: justify;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(9, 30, 66, 0.50) 0px 4px 8px -2px, rgba(9, 30, 66, 0.4) 0px 0px 0px 1px;
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+
+/* классы для использования */
+.blur{
+    filter: blur(4px);
+}
+
+.drop-shadow{
+    filter: drop-shadow(30px 10px 4px #800080);
+}
+
+.invert{
+    filter: invert();
+}
+
+.opacity{
+    filter: opacity(0.2);
+}
+
+.sepia{
+    filter: sepia();
+}
+
+/*/////////////////////////////////////////////////////////*/
+
+.paragraphP{
+    background: #663399;
+    color: white;
+    width: 55%;
+    padding: 10px;
+    text-align: justify;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(9, 30, 66, 0.50) 0px 4px 8px -2px, rgba(9, 30, 66, 0.4) 0px 0px 0px 1px;
+}
+
+.pseudo1::before{
+    content: "Fairy tale: ";
+    color: salmon;
+    font-size: 18px;
+}
+
+.pseudo2::after{
+    content: " The end!";
+    color: salmon;
+    font-size: 18px;  
+}
+
+.pseudo3::first-letter{
+    font-size: 30px;
+    color: salmon;
+}
+
+.pseudo4::first-line{
+    color: salmon;
+}
+
+/*/////////////////////////////////////////////////////////////*/
+
+.show-cursor{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #663399;
+    border-radius: 10px;
+}
+
+.show-cursor >*{
+    width: 100px;
+    height: 100px;
+    background: #DDA0DD;
+    margin: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+
+#wait:hover{
+    cursor: wait;
+}
+
+#not-allowed:hover{
+    cursor: not-allowed;
+}
+
+#zoom-in:hover{
+    cursor: zoom-in;
+}
+
+#grab:hover{
+    cursor: grab;
+}
+
+#help:hover{
+    cursor: help;
+}
+
+#svg{
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='40' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>🐧</text></svg>"),
+    auto;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+
+a {
+    display: inline-block;
+    width: 50px;
+    text-decoration: none;
+    color: white;
+    background: #1b1835;;
+  }
+  nav, scroll-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    background: #1b1835;;
+  }
+  nav {
+    width: 339px;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  scroll-container {
+    display: block;
+    width: 350px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 5em;
+    color: white;
+  }
+  
+  #page-1{
+    background: #663399;
+  }
+
+  #page-2{
+    background: #FF00FF;
+  }
+
+  #page-3{
+    background: #FFA07A;
+  }
+  #page-4{
+    background: #BC8F8F;
+  }
+  #page-5{
+    background: #800000;
+  }
